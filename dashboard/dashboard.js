@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(() => {
             // Create a map centered at a location
             const map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 13.0056, lng: 76.1025 }, // Hassan, Karnataka coordinates
+                center: { lat: 13.0056, lng: 76.1025 }, // Hassan, Karnataka
                 zoom: 12,
                 styles: [
                     {
@@ -134,22 +134,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 options: {
                     responsive: true,
                     plugins: {
-                        legend: {
-                            display: false
-                        }
+                        legend: { display: false }
                     },
                     scales: {
-                        x: {
-                            grid: {
-                                display: false
-                            }
-                        },
+                        x: { grid: { display: false } },
                         y: {
                             beginAtZero: true,
                             max: 100,
-                            ticks: {
-                                stepSize: 20
-                            }
+                            ticks: { stepSize: 20 }
                         }
                     }
                 }
@@ -173,13 +165,31 @@ document.addEventListener('DOMContentLoaded', function () {
                 options: {
                     responsive: true,
                     cutout: '70%',
-                    plugins: {
-                        legend: {
-                            display: false
-                        }
-                    }
+                    plugins: { legend: { display: false } }
                 }
             });
         }
     }
 });
+
+/**
+ * Google Maps API Loader
+ */
+function loadGoogleMapsApi() {
+    return new Promise((resolve, reject) => {
+        if (window.google && window.google.maps) {
+            resolve(window.google.maps);
+            return;
+        }
+        const script = document.createElement('script');
+        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap";
+        script.async = true;
+        script.defer = true;
+        script.onerror = () => reject(new Error('Google Maps API failed to load.'));
+        document.head.appendChild(script);
+
+        window.initMap = () => {
+            resolve(window.google.maps);
+        };
+    });
+}
