@@ -182,7 +182,7 @@ function loadGoogleMapsApi() {
             return;
         }
         const script = document.createElement('script');
-        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap";
+        script.src = "";
         script.async = true;
         script.defer = true;
         script.onerror = () => reject(new Error('Google Maps API failed to load.'));

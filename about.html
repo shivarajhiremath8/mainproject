@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Quad-Segretronics</title>
+    <meta name="description" content="Learn about our college project on sustainable waste management">
+    <meta name="keywords" content="college project, sustainability, waste management, IoT">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module" defer></script>
+</head>
+
+<body class="font-sans text-gray-900 bg-white">
+    <header class="bg-white shadow-md py-4 sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="flex items-center font-bold text-xl text-gray-900">
+                    <a href="index.html" class="flex items-center font-bold text-xl text-gray-900">
+                        <img src="assets/box.png" alt="Quad-Segretronics Logo" class="w-8 h-8 mr-2"> Quad-Segretronics
+                    </a>
+                </div>
+            </div>
+            <button class="md:hidden text-gray-600" id="menu-toggle"><i class="fas fa-bars text-xl"></i></button>
+            <nav aria-label="Main Navigation">
+                <ul
+                    class="hidden md:flex gap-8 flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0 z-20">
+                    <li><a href="index.html" class="text-gray-600 hover:text-green-500 transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-green-500 transition">About</a></li>
+                    <li><a href="blog.html" class="text-gray-600 hover:text-green-500 transition">Blog</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-green-500 transition">Contact</a></li>
+                    <li><a href="dashboard/dashboard.html"
+                            class="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600 transition">Dashboard</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h1 class="text-5xl font-bold mb-6 leading-tight">About Us</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Meet the team behind Quad-Segretronics,<br>our
+                    college
+                    project focused on sustainable waste management solutions.</p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <img src="assets/profile1.png" alt="Team Member 1"
+                            class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-2xl font-semibold mb-2">Yashaswini H P</h3>
+                        <p class="text-gray-600 mb-4">Java Full-Stack Developer</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="https://www.linkedin.com/in/yashaswini-hp-2003hp123/"
+                                class="text-gray-400 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/yashaswinihp23" class="text-gray-400 hover:text-gray-700"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <img src="assets/profile2.png" alt="Team Member 2"
+                            class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-2xl font-semibold mb-2">Sinchana H V</h3>
+                        <p class="text-gray-600 mb-4">Software Developer</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="https://www.linkedin.com/in/sinchana-h-v-3593a8229/"
+                                class="text-gray-400 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-gray-700"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <img src="assets/profile3.png" alt="Team Member 3"
+                            class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-2xl font-semibold mb-2">Shivaraj Hiremath</h3>
+                        <p class="text-gray-600 mb-4">Frontend Engineer</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="https://www.linkedin.com/in/shivaraj-hiremath-01782331a/"
+                                class="text-gray-400 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/shivarajhiremath8" class="text-gray-400 hover:text-gray-700"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Our Main Project</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our main project in college, Educhronicle,
+                        focuses on tracking and showcasing student growth while promoting sustainability in education
+                        and technology.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-leaf text-2xl text-green-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Sustainability</h3>
+                        <p class="text-gray-600">We chose sustainability because it aligns with global challenges and
+                            helps create solutions that are socially and environmentally responsible.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-users text-2xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Teamwork</h3>
+                        <p class="text-gray-600">Collaboration is key to innovation. Our diverse team brings together
+                            different skills and perspectives to tackle complex problems.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-cogs text-2xl text-teal-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Technology</h3>
+                        <p class="text-gray-600">Leveraging IoT and AI to create smart, efficient solutions for waste
+                            management and beyond.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-6">Global Sustainability Goals</h2>
+                <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">Our project contributes to UN Sustainable
+                    Development Goals, including Quality Education, Innovation & Infrastructure, and Responsible
+                    Consumption.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-graduation-cap text-2xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Quality Education</h3>
+                        <p class="text-gray-600">Promoting educational initiatives that foster sustainable development
+                            and technological literacy.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-tools text-2xl text-green-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Innovation & Infrastructure</h3>
+                        <p class="text-gray-600">Building resilient infrastructure and fostering innovation for
+                            sustainable industrial development.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-recycle text-2xl text-orange-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Responsible Consumption</h3>
+                        <p class="text-gray-600">Ensuring sustainable consumption and production patterns through
+                            efficient waste management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center font-bold text-xl mb-4">
+                        <img src="assets/box.png" alt="Quad-Segretronics Logo" class="w-8 h-8 mr-2"> Quad-Segretronics
+                    </div>
+                    <p class="text-slate-300 mb-4">Transforming waste management through innovative IoT solutions and
+                        smart technology.</p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-slate-300 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-slate-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="blog.html" class="text-slate-300 hover:text-white transition">Blog</a></li>
+                        <li><a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a></li>
+                        <li><a href="dashboard/dashboard.html"
+                                class="text-slate-300 hover:text-white transition">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-slate-300 mb-2 flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Malnad
+                        College of Engineering, Hassan - 573201</p>
+                    <p class="text-slate-300 mb-2 flex items-center"><i class="fas fa-phone mr-2"></i> 9482689608
+                    </p>
+                    <p class="text-slate-300 mb-2 flex items-center"><i class="fas fa-envelope mr-2"></i>
+                        work.mainproject@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-700 mt-8 pt-8 text-center">
+                <p class="text-slate-400" id="footer-year">&copy; 2025 Quad-Segretronics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('hidden');
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentYear = new Date().getFullYear();
+            const footerYear = document.getElementById('footer-year');
+            if (footerYear) {
+                footerYear.innerHTML = `&copy; ${currentYear} Quad-Segretronics. All rights reserved.`;
+            }
+        });
+    </script>
+</body>
+
+</html>
