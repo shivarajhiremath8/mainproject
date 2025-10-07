@@ -7,125 +7,206 @@
     <title>Waste Management Dashboard</title>
     <meta name="description" content="Smart Waste Management Solutions">
     <meta name="keywords" content="waste management, IoT, smart technology">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../Quad-Segretonics/home/styles.css">
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module" defer></script>
-    <script src="script.js" defer></script>
 </head>
 
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <div class="logo-icon"><i class="fas fa-cube"></i> Quad-Segretronics</div>
+<body class="font-sans text-gray-900 bg-white">
+
+    <!-- Responsive Navbar -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center font-bold text-xl text-gray-900">
+                <img src="assets/box.png" alt="Quad-Segretronics Logo" class="w-8 h-8 mr-2">
+                Quad-Segretronics
             </div>
-            <nav aria-label="Main Navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="../Quad-Segretonics/dashboard/dashboard.html" class="dashboard-link">Dashboard</a></li>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="lg:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Navigation Menu -->
+            <nav id="navbar"
+                class="absolute top-full left-0 w-full bg-white shadow-md lg:shadow-none lg:static lg:w-auto hidden lg:block transition-all duration-300">
+                <ul
+                    class="flex flex-col lg:flex-row lg:items-center lg:space-x-8 p-4 lg:p-0 space-y-4 lg:space-y-0 text-center">
+                    <li><a href="index.html" class="text-gray-700 hover:text-green-500 transition block">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-green-500 transition block">About</a></li>
+                    <li><a href="blog.html" class="text-gray-700 hover:text-green-500 transition block">Blog</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-green-500 transition block">Contact</a>
+                    </li>
+                    <li>
+                        <a href="dashboard/dashboard.html"
+                            class="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600 transition">
+                            Dashboard
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Smart Waste Management Solutions</h1>
-                    <p>Our IoT-powered waste management system helps cities optimize collection routes, reduce
-                        operational costs, and improve sustainability with real-time bin monitoring.</p>
-                    <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-play-circle"></i> Watch Demo</a>
-                        <a href="#" class="btn btn-secondary"><i class="fas fa-info-circle"></i> Learn More</a>
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="flex-1">
+                    <h1 class="text-5xl font-bold mb-6 leading-tight">Smart Waste Management</h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Our IoT-powered waste management system helps cities optimize collection routes,
+                        reduce operational costs, and improve sustainability with real-time bin monitoring.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="assets/WhatsApp Video 2025-05-27 at 22.01.30_36bbb80b.mp4"
+                            class="flex items-center bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">
+                            <i class="fas fa-play-circle mr-2"></i> Watch Demo
+                        </a>
+                        <a href="about.html"
+                            class="flex items-center bg-gray-100 text-gray-900 px-6 py-3 rounded-lg hover:bg-gray-200 transition">
+                            <i class="fas fa-info-circle mr-2"></i> Learn More
+                        </a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                        alt="Smart Waste Management" loading="lazy">
+                <div class="flex-1">
+                    <img src="assets/image.png" alt="Smart Waste Management" class="w-full rounded-lg shadow-lg"
+                        loading="lazy">
                 </div>
             </div>
         </section>
 
-        <section class="how-it-works">
-            <div class="container">
-                <h2>How It Works</h2>
-                <p class="section-description">Our intelligent system uses IoT sensors, AI algorithms, and cloud
-                    computing to revolutionize waste management operations.</p>
+        <!-- How It Works Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-4">How It Works</h2>
+                <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                    Our intelligent system uses IoT sensors, AI algorithms, and cloud computing
+                    to revolutionize waste management operations.
+                </p>
 
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon eco-icon">
-                            <i class="fas fa-leaf"></i>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-leaf text-2xl text-green-500"></i>
                         </div>
-                        <h3>Eco-Friendly</h3>
-                        <p>Reduces carbon emissions by optimizing collection routes and schedules based on actual fill
-                            levels.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon waste-icon">
-                            <i class="fas fa-recycle"></i>
-                        </div>
-                        <h3>Smart Disposal</h3>
-                        <p>Intelligent sensors detect fill levels and waste types to ensure proper sorting and disposal.
+                        <h3 class="text-2xl font-semibold mb-4">Eco-Friendly</h3>
+                        <p class="text-gray-600">
+                            Reduces carbon emissions by optimizing collection routes and schedules based on actual fill
+                            levels.
                         </p>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon monitor-icon">
-                            <i class="fas fa-chart-line"></i>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-recycle text-2xl text-blue-500"></i>
                         </div>
-                        <h3>Real-time Monitoring</h3>
-                        <p>Track waste collection metrics and bin status with our comprehensive dashboard system.</p>
+                        <h3 class="text-2xl font-semibold mb-4">Smart Disposal</h3>
+                        <p class="text-gray-600">
+                            Intelligent sensors detect fill levels and waste types to ensure proper sorting and
+                            disposal.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                        <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-chart-line text-2xl text-teal-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Real-time Monitoring</h3>
+                        <p class="text-gray-600">
+                            Track waste collection metrics and bin status with our comprehensive dashboard system.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="logo-icon"><i class="fas fa-cube"></i> Quad-Segretronics</div>
-                    <p>Transforming waste management through innovative IoT solutions and smart technology.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center font-bold text-xl mb-4">
+                        <img src="assets/box.png" alt="Quad-Segretronics Logo" class="w-8 h-8 mr-2">
+                        Quad-Segretronics
+                    </div>
+                    <p class="text-slate-300 mb-4">
+                        Transforming waste management through innovative IoT solutions and smart technology.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="dashboard.html">Dashboard</a></li>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-slate-300 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-slate-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="blog.html" class="text-slate-300 hover:text-white transition">Blog</a></li>
+                        <li><a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a></li>
+                        <li><a href="dashboard/dashboard.html"
+                                class="text-slate-300 hover:text-white transition">Dashboard</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Innovation City</p>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@quadsegretronics.com</p>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-slate-300 mb-2 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Malnad College of Engineering, Hassan - 573201
+                    </p>
+                    <p class="text-slate-300 mb-2 flex items-center">
+                        <i class="fas fa-phone mr-2"></i> 9482689608
+                    </p>
+                    <p class="text-slate-300 mb-2 flex items-center">
+                        <i class="fas fa-envelope mr-2"></i> work.mainproject@gmail.com
+                    </p>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2025 Quad-Segretronics. All rights reserved.</p>
+            <div class="border-t border-slate-700 mt-8 pt-8 text-center">
+                <p class="text-slate-400" id="footer-year">&copy; 2025 Quad-Segretronics. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const toggleBtn = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar");
+
+        toggleBtn.addEventListener("click", () => {
+            navbar.classList.toggle("hidden");
+        });
+
+        // Auto close menu when clicking a link
+        document.querySelectorAll("#navbar a").forEach(link => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth < 1024) navbar.classList.add("hidden");
+            });
+        });
+
+        // Dynamic footer year
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("footer-year").innerHTML =
+                `&copy; ${new Date().getFullYear()} Quad-Segretronics. All rights reserved.`;
+        });
+    </script>
+
 </body>
 
 </html>
