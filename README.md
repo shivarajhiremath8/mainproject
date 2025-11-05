@@ -1,5 +1,5 @@
 # Quad Segretronics
-Link - https://shivarajhiremath8.github.io/mainproject/
+Live - https://shivarajhiremath8.github.io/mainproject/
 
 ## Overview
 Quad-Segretronics is a smart AI-based waste management system that leverages IoT sensors, AI algorithms, and cloud computing to revolutionize waste collection and disposal processes. The system optimizes collection routes, reduces operational costs, and promotes environmental sustainability through real-time bin monitoring and intelligent data analytics.
