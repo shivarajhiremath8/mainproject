@@ -1,5 +1,6 @@
 # Quad Segretronics
 Live - https://shivarajhiremath8.github.io/mainproject/
+Research Paper - https://ijsrem.com/download/quad-segretronics-iot-powered-waste-segregation-system-with-gps-and-reverse-vending-applications/#1665240799663-79435e7a-2017
 
 ## Overview
 Quad-Segretronics is a smart AI-based waste management system that leverages IoT sensors, AI algorithms, and cloud computing to revolutionize waste collection and disposal processes. The system optimizes collection routes, reduces operational costs, and promotes environmental sustainability through real-time bin monitoring and intelligent data analytics.
